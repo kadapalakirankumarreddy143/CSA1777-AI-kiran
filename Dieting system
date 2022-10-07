@@ -1,37 +1,17 @@
-symptom(amit,fever).
-    symptom(amit,rash).
-    symptom(amit,headache).
-    symptom(amit,runny_nose).
+food(idly).
+food(dosa).
+food(rice).
+food(sambar).
+food(suger).
 
-    symptom(kaushal,chills).
-    symptom(kaushal,fever).
-    symptom(kaushal,hedache).
+quality(idly,1).
+quality(dose,1).
+quality(rice,1).
+quality(sambar,1).
+quality(suger,1).
 
-    symptom(dipen,runny_nose).
-    symptom(dipen,rash).
-    symptom(dipen,flu).
-
-
-    hypothesis(Patient,measels):-
-        symptom(Patient,fever),
-        symptom(Patient,cough),
-        symptom(Patient,conjunctivitis),
-        symptom(Patient,rash).
-
-    hypothesis(Patient,german_measles) :-
-        symptom(Patient,fever),
-        symptom(Patient,headache),
-        symptom(Patient,runny_nose),
-        symptom(Patient,rash).
-
-    hypothesis(Patient,flu) :-
-        symptom(Patient,fever),
-        symptom(Patient,headache),
-        symptom(Patient,body_ache),
-        symptom(Patient,chills).
-
-    hypothesis(Patient,common_cold) :-
-        symptom(Patient,headache),
-        symptom(Patient,sneezing),
-        symptom(Patient,sore_throat),
-        symptom(Patient,chills).
+calories(idly,1,100).
+calories(dose,1,250).
+calories(rice,1,200).
+calories(sambar,1,150).
+calories(suger,1,30).
